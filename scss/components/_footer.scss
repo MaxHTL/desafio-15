@@ -1,0 +1,28 @@
+$colores:
+    black,
+    white,
+    #ff00bf;
+;
+
+.footer{
+    width: 100%;
+    div{
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            li{
+                a{
+                    color:$text-color;
+                    padding: 20px;
+                    transition: all 250ms;
+                    &:hover{
+                        color:nth($colores,3);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

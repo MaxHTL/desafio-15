@@ -1,0 +1,21 @@
+$button-color:#ff00bf;
+
+.button-global{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color:$button-color;
+    padding: 10px;
+    transition: all 500ms;
+        &:hover{
+            transform: scale(1.1);
+        }
+        a{
+            color: $text-color;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 500ms;  
+        }
+}

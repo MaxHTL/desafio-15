@@ -1,0 +1,38 @@
+$colores:
+    black,
+    white,
+    #ff00bf;
+;
+
+.header{
+    position: sticky;
+    top: 0;
+    color: nth($colores,2);
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 100%;
+}
+
+.menu{
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: nth($colores,1);
+        list-style: none;
+        li{
+            a{
+                color: nth($colores,2);
+                text-decoration: none;
+                font-weight: bold;
+                display: block;
+                padding: 10px;
+                transition: all 500ms;
+                &:hover{
+                    color: nth($colores,3);
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
